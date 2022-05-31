@@ -1,0 +1,115 @@
+.advantages {
+  padding: 40px 0;
+}
+
+.advantages__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 40px;
+}
+
+.advantages__title {
+  color: #292929;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.advantages__title--little {
+  opacity: 0.9;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.advantages__description {
+  opacity: 0.6;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.advantages__photo img {
+  max-width: 100%;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 48px;
+  position: relative;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantages__item::before {
+  content: url(/assets/src/img/check_icon.png);
+  position: absolute;
+  left: -48px;
+}
+
+.advantages__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 60px 0;
+  }
+  .advantages__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .advantages__title--little {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .advantages__description {
+    font-size: 20px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .advantages {
+    padding: 60px 0;
+  }
+  .advantages__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .advantages__left {
+    max-width: 60%;
+  }
+}
+/*# sourceMappingURL=advantages.css.map */

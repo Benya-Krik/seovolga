@@ -1,0 +1,107 @@
+.feedback {
+    background-color: #fcb81d;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    &__underline {
+        background: linear-gradient(to left, #fcb81d 0%, #f7f9fb 100%);
+        height: 5px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        margin: 20px 0;
+        z-index: 1;
+    }
+
+    &__title {
+        color: #fffefe;
+        font-size: 24px;
+        font-weight: 700;
+        z-index: 1;
+    }
+
+    &__star {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 20px;
+        z-index: 1;
+
+        & input {
+            width: 280px;
+            padding: 24px 32px;
+            border: none;
+            outline: none;
+            border-radius: 36px;
+            transition: all .3s;
+            &:hover {
+                opacity: .8;
+            }
+
+            &::placeholder {
+                opacity: 0.4;
+                color: #000000;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        & button {
+            width: 280px;
+            padding: 24px 32px;
+            border: none;
+            outline: none;
+            border-radius: 36px;
+            background-color: #1b2d2f;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all .3s;
+            &:hover {
+                cursor: pointer;
+                background-color: #ffffff;
+                color: #1b2d2f;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .feedback {
+        padding: 60px 0;
+
+        &__title {
+            font-size: 28px;
+            text-align: start;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .feedback {
+        &__form {
+            flex-direction: row;
+            flex-wrap: wrap;
+            grid-gap: 20px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import "sections/advantages/advantages";
+@import "sections/feedback/feedback";
+@import "sections/tasks/tasks";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    input, textarea, select {
+        -webkit-appearance: none;
+    }
+    summary::-webkit-details-marker {
+        display: none;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+
+    @media screen and (min-width:768px){
+        padding: 0 48px;
+    }
+
+    @media screen and (min-width:1380px){
+        max-width: 1200px;
+        padding: 0;
+    }
+}

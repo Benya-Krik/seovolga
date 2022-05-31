@@ -88,6 +88,10 @@
 @media screen and (min-width:1024px) {
     .advantages {
 
+        &__title {
+            text-align: start;
+        }
+
         &__container {
             flex-direction: row;
             justify-content: space-between;

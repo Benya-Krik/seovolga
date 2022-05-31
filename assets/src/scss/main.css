@@ -97,6 +97,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .advantages__title {
+    text-align: start;
+  }
   .advantages__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

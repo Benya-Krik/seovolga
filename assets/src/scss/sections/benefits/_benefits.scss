@@ -1,0 +1,215 @@
+.benefits {
+    padding: 40px 0;
+    background-color: #E5E5E5;
+    position: relative;
+    overflow: hidden;
+
+    &__title {
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133%;
+        text-align: center;
+        color: #000000;
+
+        &--little {
+            margin: 40px 0 24px 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;
+        }
+    }
+
+    &__star {
+        &--gray {
+            position: absolute;
+            top: 0;
+            left: -80px;
+            transform: rotate(220deg);
+            z-index: 0;
+            max-width: 80%;
+        }
+
+        &--orange {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+    }
+
+    &__container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 40px;
+    }
+
+    &__numbers {
+        width: 60px;
+        height: 60px;
+        background-color: #EF9600;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 36px;
+        position: relative;
+    }
+
+    &__item {
+        display: flex;
+        grid-gap: 40px;
+        align-items: center;
+
+        &:not(:last-child) {
+            & div {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 140px;
+                    bottom: -140px;
+                    width: 1px;
+                    background-color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    &__description {
+        max-width: 160px;
+        color: #2E363E;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__list {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 150%;
+        color: #000000;
+
+        & li {
+            margin-left: 12px;
+            position: relative;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 150%;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -12px;
+                width: 4px;
+                height: 4px;
+                background-color: #000000;
+            }
+            &:first-child {
+                margin-top: 24px;
+            }
+            &:last-child {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 150%;
+        color: #000000;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .benefits {
+        padding: 60px 0;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__item {
+            grid-gap: 80px;
+
+            &:not(:last-child) {
+                & div {
+                    &::after {
+                        height: 100px;
+                        bottom: -100px;
+                    }
+                }
+            }
+        }
+
+        &__description {
+            max-width: 320px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .benefits {
+        padding: 80px 0;
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__steps {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &__item {
+            flex-direction: column;
+            &:not(:last-child){
+                & div {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        right: -240px;
+                        bottom: 50%;
+                        width: 240px;
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .benefits {
+        &__item {
+            &:not(:last-child){
+                & div {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        right: -280px;
+                        bottom: 50%;
+                        width: 280px;
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}

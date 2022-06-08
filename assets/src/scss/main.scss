@@ -6,8 +6,9 @@
 @import "sections/trust/trust";
 @import "sections/benefits/benefits";
 @import "sections/services/services";
-
-
+@import "sections/category/category";
+@import "sections/seotext/seotext";
+@import "sections/staff/staff";
 
 
 
@@ -18,7 +19,7 @@
     padding: 0;
     outline: none;
     text-decoration: none;
-    list-style: none;
+    // list-style: none;
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
     input, textarea, select {
